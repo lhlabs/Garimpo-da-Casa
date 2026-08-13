@@ -1,0 +1,22 @@
+# Segredos e credenciais locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+credentials*.json
+service-account*.json
+
+# Arquivos locais do sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporários, logs e dependências
+*.log
+*.tmp
+node_modules/
