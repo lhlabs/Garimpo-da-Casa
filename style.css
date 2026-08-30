@@ -841,6 +841,10 @@ h2 em {
   font-weight: inherit;
 }
 
+.mobile-catalog-title {
+  display: none;
+}
+
 .catalog-heading > div:first-child > p:last-child {
   color: var(--muted);
   margin-top: 20px;
@@ -1688,53 +1692,30 @@ button:focus-visible {
   .hero {
     grid-template-columns: 1fr;
     min-height: 0;
-    padding: 40px 20px 48px;
+    padding: 28px 20px 30px;
   }
 
   h1 {
-    font-size: clamp(2.85rem, 13vw, 3.65rem);
-    line-height: 0.96;
+    font-size: clamp(2.3rem, 10.8vw, 3rem);
+    line-height: 0.98;
   }
 
-  .eyebrow {
-    font-size: 0.59rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 17px;
-  }
-
-  .hero-text {
-    font-size: 0.92rem;
-    margin-top: 22px;
+  .hero-copy > .eyebrow,
+  .hero-text,
+  .hero .text-link,
+  .hero .trust-list {
+    display: none;
   }
 
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
-    gap: 14px;
-    margin-top: 26px;
+    gap: 0;
+    margin-top: 22px;
   }
 
   .button-whatsapp {
     width: 100%;
-  }
-
-  .text-link {
-    font-size: 0.77rem;
-    text-align: center;
-  }
-
-  .trust-list {
-    gap: 8px 13px;
-    margin-top: 22px;
-  }
-
-  .trust-list li {
-    font-size: 0.64rem;
-  }
-
-  .trust-list span {
-    height: 18px;
-    width: 18px;
   }
 
   .hero-visual {
@@ -1781,17 +1762,30 @@ button:focus-visible {
   }
 
   .catalog-section {
-    padding-top: 58px;
+    padding-top: 34px;
   }
 
   .catalog-heading {
     align-items: start;
-    gap: 26px;
+    gap: 13px;
     grid-template-columns: 1fr;
   }
 
-  .catalog-status {
-    padding-left: 14px;
+  .catalog-heading .eyebrow,
+  .catalog-heading > div:first-child > p:last-child,
+  .catalog-status,
+  .desktop-catalog-title {
+    display: none;
+  }
+
+  .mobile-catalog-title {
+    display: inline;
+  }
+
+  .catalog-heading h2 {
+    font-size: 2.2rem;
+    line-height: 0.98;
+    max-width: 330px;
   }
 
   .category-showcase {
@@ -1799,9 +1793,9 @@ button:focus-visible {
     gap: 10px;
     margin-left: -20px;
     margin-right: -20px;
-    margin-top: 34px;
+    margin-top: 20px;
     overflow-x: auto;
-    padding: 3px 20px 14px;
+    padding: 3px 20px 10px;
     scrollbar-width: none;
   }
 
@@ -1810,8 +1804,19 @@ button:focus-visible {
   }
 
   .category-tile {
-    flex: 0 0 188px;
-    min-height: 76px;
+    flex: 0 0 174px;
+    min-height: 66px;
+    padding: 9px;
+  }
+
+  .category-icon {
+    height: 38px;
+    width: 38px;
+  }
+
+  .category-icon svg {
+    height: 20px;
+    width: 20px;
   }
 
   .catalog-controls {
@@ -1820,17 +1825,18 @@ button:focus-visible {
     border-right: 0;
     margin-left: -20px;
     margin-right: -20px;
-    margin-top: 8px;
-    padding: 11px 20px;
+    gap: 9px;
+    margin-top: 4px;
+    padding: 9px 20px;
     top: 64px;
   }
 
   .product-search {
-    min-height: 47px;
+    min-height: 43px;
   }
 
   .catalog-groups {
-    margin-top: 52px;
+    margin-top: 34px;
   }
 
   .product-group + .product-group {
@@ -1995,7 +2001,7 @@ button:focus-visible {
 
 @media (max-width: 390px) {
   h1 {
-    font-size: 2.82rem;
+    font-size: 2.35rem;
   }
 
   .hero-visual {
