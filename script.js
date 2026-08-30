@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const searchInput = document.getElementById("product-search");
-  const filterButtons = document.querySelectorAll(".filter-button");
+  const filterButtons = document.querySelectorAll("[data-filter]");
   const productCards = document.querySelectorAll(".product-card");
   const productGroups = document.querySelectorAll(".product-group");
   const productCount = document.getElementById("product-count");
@@ -69,11 +69,15 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       activeFilter = button.dataset.filter || "all";
       filterButtons.forEach((item) => {
-        const isActive = item === button;
+        const isActive = item.dataset.filter === activeFilter;
         item.classList.toggle("active", isActive);
         item.setAttribute("aria-pressed", String(isActive));
       });
       updateCatalog();
+
+      if (button.classList.contains("category-tile")) {
+        document.querySelector(".catalog-controls")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
   });
 
