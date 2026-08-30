@@ -1,10 +1,10 @@
 # Garimpo da Casa
 
-Landing page oficial do Garimpo da Casa, criada para transformar o tráfego do Instagram em entradas na comunidade de achados no WhatsApp.
+Site oficial do Garimpo da Casa, criado para transformar o tráfego do Instagram em entradas na comunidade de achados no WhatsApp e compras diretas no catálogo curado.
 
 ## Objetivo
 
-A página apresenta a proposta da marca, explica os benefícios da curadoria e conduz o visitante até o WhatsApp com chamadas claras ao longo de toda a experiência.
+A página apresenta a proposta da marca, prioriza a comunidade no mobile e organiza os produtos por categoria, com busca, filtros e links diretos para os anúncios.
 
 ## Estrutura
 
@@ -12,12 +12,19 @@ A página apresenta a proposta da marca, explica os benefícios da curadoria e c
 Garimpo-da-Casa/
 ├── index.html      # conteúdo e estrutura da página
 ├── style.css       # identidade visual e responsividade
-├── script.js       # animações leves e ano automático
-├── images/         # imagens da marca
+├── script.js       # animações, busca, filtros e ano automático
+├── images/         # imagens da marca e dos produtos
 └── README.md
 ```
 
 ## Atualizações importantes
+
+### Catálogo de produtos
+
+- Produtos separados em Cozinha, Organização, Limpeza, Banheiro e Tecnologia.
+- Busca por nome ou finalidade e filtros de categoria.
+- Cards com imagem, preço de referência e acesso direto à oferta.
+- No mobile, a comunidade aparece primeiro e o catálogo logo em seguida.
 
 ### Link da comunidade
 
